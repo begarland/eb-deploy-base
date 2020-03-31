@@ -3,206 +3,36 @@
 /* http://www.1001fonts.com/carbon-font.html */
 @font-face {
   font-family: "carbon";
-  src: url("/assets/fonts/carbon_bl-webfont.eot");
-  src: url("/assets/fonts/carbon_bl-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/carbon_bl-webfont.woff2") format("woff2"), url("/assets/fonts/carbon_bl-webfont.woff") format("woff"), url("/assets/fonts/carbon_bl-webfont.ttf") format("truetype"), url("/assets/fonts/carbon_bl-webfont.svg#carbonblack") format("svg");
+  src: url("/static/assets/fonts/carbon_bl-webfont.eot");
+  src: url("/static/assets/fonts/carbon_bl-webfont.eot?#iefix") format("embedded-opentype"), url("/static/assets/fonts/carbon_bl-webfont.woff2") format("woff2"), url("/static/assets/fonts/carbon_bl-webfont.woff") format("woff"), url("/static/assets/fonts/carbon_bl-webfont.ttf") format("truetype"), url("/static/assets/fonts/carbon_bl-webfont.svg#carbonblack") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /* standard media query variables */
 /* color blind safe color palette - see: https://personal.sron.nl/~pault/ */
 /* fonts */
-/* fonts */
 /* style guide */
-#about p {
+.App {
   text-align: center;
-  margin-bottom: 5px;
-}
-
-.about-skills {
-  width: 85%;
-  margin: auto;
-}
-@media screen and (max-width: 500px) {
-  .about-skills {
-    width: 90%;
-  }
-}
-
-.circle-div {
+  box-sizing: border-box;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  margin: auto;
-  background-color: white;
 }
 
-.circle-div-child {
-  width: 120px;
-  margin: auto;
-}
-
-.exp-cont:last-of-type {
-  padding-bottom: 10px;
-}
-
-.exp-title {
-  border-top: #3D8974 2px solid;
-}
-
-.job-title {
-  border-bottom: #3D8974 2px solid;
-  text-align: center;
-  color: #3D8974;
-  margin-top: -15px;
-}
-
-.exp-and-job-container {
-  margin-top: 10px;
-}
-
-.res-and-ach-container {
-  width: 90%;
-  margin: auto;
-}
-
-.skill-icon {
-  color: #3D8974;
-  font-size: 15px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.icon-left {
-  margin: 0;
-  margin-left: 2px;
-  margin-right: 1px;
-}
-
-.icon-right {
-  margin: 0;
-  margin-right: 2px;
-  margin-left: 1px;
-}
-
-.skill-name {
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 15px;
-}
-
-.skill-container {
-  width: 95%;
-  margin: auto;
-  text-align: justify;
-}
-
-.skill-title {
-  text-decoration: underline;
-  text-decoration-color: #3D8974;
-  -webkit-text-decoration-color: #3D8974;
-  margin-bottom: -5px;
-}
-
-#certs-container {
-  margin: auto;
-  text-align: center;
-}
-
-.certification-image {
-  max-height: 100px;
-  margin: 10px;
-}
-
-.certification-url-wrapper {
-  all: unset;
-}
-
-.contact-container {
-  padding-bottom: 120px;
-}
-.contact-container a {
+.App-splash-logo {
+  padding: 20px;
   color: white;
 }
-.contact-container a:hover {
-  color: #3D8974;
-}
-.contact-container a:active {
-  color: #3D8974;
+
+.header-logo {
+  width: 100px;
+  cursor: pointer;
 }
 
-.header {
-  height: 30vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 350px;
-}
-.header img {
-  max-width: 95vw;
-  margin: auto;
-  padding-left: 6px;
-}
-
-.section-title {
-  text-decoration: underline;
-  text-decoration-color: #3D8974;
-  -webkit-text-decoration-color: #3D8974;
-}
-
-.section-container {
-  background: rgba(0, 0, 0, 0.7);
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 500px) {
-  .section-container {
-    width: 75vw;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-}
-
-.section-child {
-  width: 90%;
-  margin: auto;
-  border-radius: 4px;
-}
-
-.markdown-container .markdown-title {
-  text-decoration: underline;
-  text-decoration-color: #3D8974;
-  -webkit-text-decoration-color: #3D8974;
-  margin-bottom: -5px;
-}
-.markdown-container ul {
-  list-style: square;
-}
-.markdown-container li {
-  margin-bottom: 2px;
-  width: 88%;
-  margin: auto;
-}
-
-.App {
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#content-scroll {
-  background-color: transparent;
-  width: 100%;
-  height: 100vh;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+.header-text {
+  font-family: "carbon";
 }
 
 body {
@@ -218,84 +48,7 @@ html {
 #root {
   width: 100vw;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-h1 {
-  font-size: 28pt;
-  text-align: center;
-  font-family: "Teko", serif;
-}
-
-h2 {
-  font-size: 22pt;
-  text-align: center;
-  font-family: "Teko", serif;
-}
-
-h3 {
-  font-size: 20px;
-  font-family: "Teko", serif;
-}
-
-h4 {
-  font-size: 16px;
-  font-family: "Teko", serif;
-}
-
-h5 {
-  font-size: 16px;
-  font-family: "Teko", serif;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-a {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Teko", serif;
-  display: block;
-  color: #3D8974;
-  text-decoration: none;
-  text-align: center;
-  margin: auto;
-}
-
-div, p {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-}
-
-label, span {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  display: block;
-}
-
-span {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-.section-label {
-  font-size: 12pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-  font-family: "Roboto", sans-serif;
-}
-
-input {
-  margin: 5px 10px !important;
-}
-
-.button-icon {
-  margin-right: 5px;
-}
-
-ul li ul li {
-  margin-left: 20px;
+  background-color: #222222;
 }
 
 /*# sourceMappingURL=main.css.map */
